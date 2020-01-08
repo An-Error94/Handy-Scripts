@@ -1,1 +1,26 @@
+//wisely run the script (https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event#Checking_whether_loading_is_already_complete):
+if(document.readyState === 'loading'){
+	document.addEventListener('DOMContentLoaded', AtDocumentPolyfill);
+} else {
+  AtDocumentPolyfill();
+}
+
+function AtDocumentPolyfill(){
+
+//full domain name under which the document is located in which the script is running
+  let QuDomain=document.location.hostname;
+
+//exclude situations where the string obtained from "document.location.hostname" is empty. This happens e.g. when a saved page from the internet is opened on the user's computer. If the "data-at-document" attribute was then assigned an empty string value, this would prevent the use of the selectors that were used when the page was on the server.
+	if(QuDomain != ""){
+
+//adds a data attribute to the "html" element (https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/data-*)
+		document.querySelector('html').setAttribute('data-at-document', document.location.hostname);
+    
+//document.location.hostname returns the domain of the URL of the document in which the script is running
+
+	}
+}
+
+
+
 
