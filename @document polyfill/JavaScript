@@ -28,17 +28,18 @@ function AtDocumentPolyfill(){
 		DomainWithHyphen=DomainWithHyphen+Table[S]+'-';
 	}
 
-//when the page on the disk on the given computer opens, "document.location.hostname" returns an empty string
-//If the "data-at-document-domain" attribute is assigned an empty string value,
-//this would prevent the use of the selectors that were used when the page was on the server.
+//When the page on the disk on the given computer opens, "document.location.hostname" returns an empty string.
+//Agreement to change the attributes that were given to it when it was loaded from the server,
+//would destroy the information about the origin of this site and thus
+//would prevent the use of dedicated selectors for websites based on its address
 	if(DomainWithHyphen != ""){
 
 //adds a data attribute to the "html" element (https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/data-*)
 		document.querySelector('html').setAttribute('data-at-document-domain', DomainWithHyphen);
 		
 //reads the document URL - read-only
-	Url=document.URL;
+		Url=document.URL;
 
-	document.querySelector('html').setAttribute('data-at-document-url', Url);	
+		document.querySelector('html').setAttribute('data-at-document-url', Url);	
 	}
 }
