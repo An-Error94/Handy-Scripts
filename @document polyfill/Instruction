@@ -16,11 +16,29 @@ to indicate that the item you are looking for is contained in an "html" element 
 i.e. it is simply on the page that has the desired address or is on the desired domain.
 
 Only now can you use the right selector of any level of complexity, referring to a particular page element,
-e.g. each visited link ("a: visited" selector).
+e.g. each visited link ("a:visited" selector).
 
-Replacing function url():
 
-use 'html[data-at-document-url^="ad"] ' instead of: 'url-prefix("http://www.w3.org/Style/")'
-Attention: 
- a
+
+
+
+Replacing function url-prefix():
+
+'html[data-at-document-url^="addressPrefix"] '
+where:
+addressPrefix - address prefix
+
+In other words:
+'html[data-at-document-url^="addressPrefix"] ' - matches if the document URL starts with the value provided.
+
+Attention!!!
+A space after the selector is necessary because this is Descendant combinator!!!
+
+Example:
+use 'html[data-at-document-url^="http://www.w3.org/Style/"] ' instead of: 'url-prefix("http://www.w3.org/Style/")'
+
+The following selector disables the display of all links (anchors) on all pages whose URL begins with: 
+https://developer.mozilla.org/en-US/docs/Web
+html[data-at-document-url^="https://developer.mozilla.org/en-US/docs/Web"] a{display:none}
+
 
