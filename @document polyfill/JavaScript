@@ -9,16 +9,16 @@ if(document.readyState === 'loading'){
 function AtDocumentPolyfill(){
 
 //full domain name under which the document is located in which the script is running
-  let QuDomain=document.location.hostname;
+  let Domain=document.location.hostname;
 
 //exclude situations where the string obtained from "document.location.hostname" is empty.
 //This happens e.g. when a saved page from the internet is opened on the user's computer.
 //If the "data-at-document" attribute was then assigned an empty string value,
 //this would prevent the use of the selectors that were used when the page was on the server.
-	if(QuDomain != ""){
+	if(Domain != ""){
 
 //adds a data attribute to the "html" element (https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/data-*)
-		document.querySelector('html').setAttribute('data-at-document', document.location.hostname);
+		document.querySelector('html').setAttribute('data-at-document', Domain);
     
 //document.location.hostname returns the domain of the URL of the document in which the script is running
 
