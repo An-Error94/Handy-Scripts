@@ -5,7 +5,15 @@ and
 "Data-at-document-url"
 which contains the URL of the document.
 
+The @document rule is only supported in firefox, while the attribute selector:
+(https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors) is widely supported.
+
+
+
+
+
+
 @document rule:
 Replacing function url():
 
-replace @document url("https://www.example.com/") with y
+
