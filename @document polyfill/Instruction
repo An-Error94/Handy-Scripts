@@ -5,15 +5,22 @@ and
 "Data-at-document-url"
 which contains the URL of the document.
 
+General idea of how this polyfill works:
+
 The @document rule is only supported in firefox, while the attribute selector:
 (https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors) is widely supported.
+You can use attribute selectors on attributes created by the script.
 
+Then use Descendant combinator (space): (https://developer.mozilla.org/en-US/docs/Web/CSS/Descendant_combinator)
+to indicate that the item you are looking for is contained in an "html" element with the appropriate attribute values,
+i.e. it is simply on the page that has the desired address or is on the desired domain.
 
+Only now can you use the right selector of any level of complexity, referring to a particular page element,
+e.g. each visited link ("a: visited" selector).
 
-
-
-
-@document rule:
 Replacing function url():
 
+use 'html[data-at-document-url^="ad"] ' instead of: 'url-prefix("http://www.w3.org/Style/")'
+Attention: 
+ a
 
