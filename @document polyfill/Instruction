@@ -71,8 +71,14 @@ html[data-at-document-url^="https://developer.mozilla.org/en-US/docs/Web"] a{dis
 
 'html[data-at-document-domain|="domainSpecialString"] '
 where:
-domainSpecialString - 
-
+domainSpecialString - A special string specifying the desired domain as follows:
+                      you should write domains in the order according to their hierarchy, including the top-level domain,
+                      i.e. in reverse order of their occurrence in the address, and each of them should be separated by a hyphen
+example:
+org                   - matches all top-level domains "org"
+org-mozilla           - matches all pages in the domain "mozilla.org"
+org-mozilla-developer - matches all pages in the domain "developer.mozilla.org" =
+                        = matches all pages in the "developer.mozilla.org" subdomain of the "mozilla.org" domain
 
 
 
