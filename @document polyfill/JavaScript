@@ -8,37 +8,37 @@ if(document.readyState === 'loading'){
 
 function AtDocumentPolyfill(){
 
-	let QuTable,QuReplace,QuS,QuUrl;
-	let QuDomainWithHyphen='';
+	let Table,Replace,S,Url;
+	let DomainWithHyphen='';
 	
 //full domain name under which the document is located in which the script is running
-	let QuDomainString=document.location.hostname;
+	let DomainString=document.location.hostname;
 
 //replacement of all dashes (-) in domain names using "^" - dashes will be needed to separate each domain from each other
-	QuReplace=QuDomainString.replace(/-/g, '^');
+	Replace=DomainString.replace(/-/g, '^');
 
 //splitting the string in places where there are dots and creating a table from divided fragments, without dots
-	QuTable=QuReplace.split('.');
+	Table=Replace.split('.');
 //I separate each domain from each other to be able to put them in reverse order - that's the way to process domains
-	QuTable.reverse();
+	Table.reverse();
 //reverse the order of items in the table
 
 //creating a string containing domains in order from the highest hierarchy to the lowest, separated by dashes (-)
-	for(QuS=0;QuS<QuTable.length;QuS++){
-		QuDomainWithHyphen=QuDomainWithHyphen+QuTable[QuS]+'-';
+	for(S=0;S<Table.length;S++){
+		DomainWithHyphen=DomainWithHyphen+Table[S]+'-';
 	}
 
 //when the page on the disk on the given computer opens, "document.location.hostname" returns an empty string
 //If the "data-at-document-domain" attribute is assigned an empty string value,
 //this would prevent the use of the selectors that were used when the page was on the server.
-	if(QuDomainWithHyphen != ""){
+	if(DomainWithHyphen != ""){
 
 //adds a data attribute to the "html" element (https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/data-*)
-		document.querySelector('html').setAttribute('data-at-document-domain', QuDomainWithHyphen);
+		document.querySelector('html').setAttribute('data-at-document-domain', DomainWithHyphen);
 		
 //reads the document URL - read-only
-	QuUrl=document.URL;
+	Url=document.URL;
 
-	document.querySelector('html').setAttribute('data-at-document-url', QuUrl);	
+	document.querySelector('html').setAttribute('data-at-document-url', Url);	
 	}
 }
