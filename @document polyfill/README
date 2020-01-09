@@ -1,13 +1,10 @@
 My goal was to show how to replace the CSS @document rule in combination with function: url(), url-prefix() and domain()
-in user stylesheet (e.g. in: [profile directory]/chrome/userContent.css in case firefox web browser)
+in user stylesheet (which is located in: [profile directory]/chrome/userContent.css in case firefox web browser)
 so that it can be used in any web browser.
 
 Unfortunately, you also need JavaScript in the user to do this.
 Unfortunately, for this purpose you also need a user script in JavaScript, and therefore an add-on e.g. Greasemonkey.
 
-My main goal was simplicity, not perfect exception handling - I created it with a view to using in (my private) user style sheets.
-
-I will not work on solving the problem of replacing the regexp() function or the media-document() function -
-this is not necessary for me and it is too difficult - the domain() function is enough for me.
+I will never ever work on solving the problem of replacing the regexp() function or the media-document() function - it is too difficult and what I have done is enough for me.
 
 The way how my polyfill works is in the comments in the code.
