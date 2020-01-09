@@ -74,11 +74,11 @@ where:
 domainSpecialString - A special string specifying the desired domain as follows:
                       you should write domains in the order according to their hierarchy, including the top-level domain,
                       i.e. in reverse order of their occurrence in the address, and each of them should be separated by a hyphen
+                      If the hyphen (-) is part of the domain name, replace it with "^".
 example:
 org                   - matches all top-level "org" domains and all subdomains thereof
 org-mozilla           - matches all pages in the "mozilla.org" domain and all its subdomains
-org-mozilla-developer - matches all pages in the domain "developer.mozilla.org" and its subdomains
-
+org-mozilla-developer - matches all pages in the domain "developer.mozilla.org" and all its subdomains
 
 
 In other words:
@@ -93,5 +93,5 @@ A space after the selector is necessary because this is Descendant combinator!!!
 Example:
 use 'html[data-at-document-domain|="org-mozilla"] ' instead of: 'domain("mozilla.org")'
 
-The following selector disables the display of all links (anchors) on all pages that are on the x domain:
-https://developer.mozilla.org/en-US/docs/Web
+The following selector disables the display of all links (anchors) on all pages in the mozilla.org domain and all its subdomains:
+html[data-at-document-url|="org-mozilla"] a{display:none}
