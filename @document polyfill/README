@@ -1,5 +1,5 @@
 My goal was to show how to replace the CSS @document rule in combination with function: url(), url-prefix() and domain()
-in user stylesheet (which is located in: [profile directory]/chrome/userContent.css in case firefox web browser)
+in user stylesheet (which can be placed in: [profile directory]/chrome/userContent.css for the Firefox web browser)
 so that it can be used in any web browser.
 
 Unfortunately, you also need JavaScript in the user to do this.
