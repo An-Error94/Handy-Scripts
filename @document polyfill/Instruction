@@ -1,1 +1,11 @@
+Thanks to JavaScript, we get "head" elements on each web page with the attributes:
+- "Data-at-document-domain"
+whose value is the full name of the domain under which the document is located in which the script is running,
+and
+"Data-at-document-url"
+which contains the URL of the document.
 
+@document rule:
+Replacing function url():
+
+replace @document url("https://www.example.com/") with y
