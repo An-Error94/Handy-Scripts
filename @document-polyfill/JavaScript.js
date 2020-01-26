@@ -28,7 +28,7 @@ function AtDocumentPolyfill(){
 		DomainWithHyphen = DomainWithHyphen+Table[S]+'-';
 	}
 
-// When the page opens, "document.location.hostname" returns an empty string.
+// --------------------- When the page opens, "document.location.hostname" returns an empty string.
 // Changing the attributes given to it when it was first loaded
 // would destroy the information about the origin of this site and thus
 // prevent the use of dedicated selectors for websites based on its address
