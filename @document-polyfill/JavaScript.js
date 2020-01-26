@@ -1,45 +1,56 @@
+// ==UserScript==
+// @name     AtDocument-polyfill
+// @version  1
+// @grant    none
+// ==/UserScript==
+
+//above: the code needed in the Greasemonkey add-on
+
+//enables strict code interpretation - prevents hard to detect errors
+'use strict';
+
 // Check whether loading is complete
 // (http://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event#Checking_whether_loading_is_already_complete):
 if(document.readyState === 'loading'){
-	document.addEventListener('DOMContentLoaded', AtDocumentPolyfill);
+	document.addEventListener('DOMContentLoaded', atDocumentPolyfill);
 } else {
-	AtDocumentPolyfill();
+	atDocumentPolyfill();
 }
 
-function AtDocumentPolyfill(){
+function atDocumentPolyfill(){
 
-	let Table,Replace,S,Url;
-	let DomainWithHyphen='';
+	let table,replace,i,url;
+	let domainWithHyphen='';
 
 // Get the full domain name under which the document is located, in which the script is running
-	let DomainString = document.location.hostname;
+	let domainString = document.location.hostname;
 
 // Replace all dashes (-) in domain names with "^" - dashes are needed to separate domains from each other
-	Replace = DomainString.replace(/-/g, '^');
+	replace = domainString.replace(/-/g, '^');
 
 // Split the string anywhere there is a dot and creating a table from the divided fragments, without dots
-	Table = Replace.split('.');
+	table = replace.split('.');
 // Separate each domain and put them in reverse order - that's the way to process domains
 // Reverse the order of items in the table
-	Table.reverse();
+	table.reverse();
 
 // Create a string containing domains in order of the highest hierarchy to the lowest, separated by dashes (-)
-	for(S=0;S<Table.length;S++){
-		DomainWithHyphen = DomainWithHyphen+Table[S]+'-';
+	for(i=0;i<table.length;i++){
+		domainWithHyphen = domainWithHyphen+table[i]+'-';
 	}
 
 // --------------------- When the page opens, "document.location.hostname" returns an empty string.
 // Changing the attributes given to it when it was first loaded
 // would destroy the information about the origin of this site and thus
 // prevent the use of dedicated selectors for websites based on its address
-	if(DomainWithHyphen != "") {
+	if(domainWithHyphen != "-") {
 
 // Add a data attribute to the "html" element (https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/data-*)
-		document.querySelector('html').setAttribute('data-at-document-domain', DomainWithHyphen);
+		document.querySelector('html').setAttribute('data-at-document-domain', domainWithHyphen);
 
 // Read the document URL (this is read-only)
-		Url = document.URL;
+		url = document.URL;
 
-		document.querySelector('html').setAttribute('data-at-document-url', Url);
+		document.querySelector('html').setAttribute('data-at-document-url', url);
 	}
 }
