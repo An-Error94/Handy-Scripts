@@ -1,5 +1,11 @@
 # Instructions on getting the polyfill working
 
+First you need to install the script manager in your browser. List of script managers for browsers:
+[OpenUserJS.org - The home of Free and Open Source Software (FOSS) user scripts](https://github.com/OpenUserJS/OpenUserJS.org/wiki/Userscript-Beginners-HOWTO), 
+
+
+
+
 Our JavaScript adds two attributes on each page's `<html>` element:
 
 * "data-at-document-domain": Contains the document's full domain name
