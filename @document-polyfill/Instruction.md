@@ -1,8 +1,8 @@
 # Instructions on getting the polyfill working
 
-Our JavaScript adds two attributes on each page's `&lt;html&gt;` element:
+Our JavaScript adds two attributes on each page's `<html>` element:
 
-* "data-at-document-domain": Contains the script's full domain name
+* "data-at-document-domain": Contains the document's full domain name
 * "data-at-document-url": Contains the URL of the document.
 
 ## General idea of how this polyfill works
@@ -95,9 +95,10 @@ You should write domains in hierarchy order, including the top-level domain, i.e
 
 For example:
 
-* `org` matches all top-level "org" domains and all subdomains thereof.
-* `org-mozilla` matches all pages in the "mozilla.org" domain and all its subdomains.
-* `org-mozilla-developer` matches all pages in the domain "developer.mozilla.org" and all its subdomains.
+* `com` matches all top-level "com" domains and all subdomains thereof.
+* `com-example` matches all pages in the "example.com" domain and all its subdomains.
+* `com-example-developer` matches all pages in the domain "developer.example.com" and all its subdomains.
+* `com-example-strange^part` matches all pages in the domain "strange-part.example.com" and all its subdomains.
 
 In other words `html[data-at-document-domain|="domainSpecialString"]` - matches if the document URL is on the domain provided (or a subdomain of it).
 
