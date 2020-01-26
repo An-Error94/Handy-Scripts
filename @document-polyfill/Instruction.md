@@ -30,7 +30,7 @@ A space after the selector is necessary because this is a descendant combinator.
 
 Use
 
-`html[data-at-document-url="https://developer.mozilla.org/en-US/docs/Web/CSS/@document"] `
+`html[data-at-document-url="https://developer.mozilla.org/en-US/docs/Web/CSS/@document"] `,
 
 instead of
 
@@ -59,7 +59,7 @@ A space after the selector is necessary because this is a descendant combinator.
 
 Use
 
-```html[data-at-document-url^="https://developer.mozilla.org/en-US/docs/Web"] ```
+```html[data-at-document-url^="https://developer.mozilla.org/en-US/docs/Web"] ```,
 
 instead of
 
@@ -99,7 +99,7 @@ A space after the selector is necessary because this is a descendant combinator.
 
 Use
 
-```html[data-at-document-domain|="org-mozilla"] ```
+```html[data-at-document-domain|="org-mozilla"] ```,
 
 instead of
 
