@@ -1,14 +1,3 @@
-// ==UserScript==
-// @name     AtDocument-polyfill
-// @version  1
-// @grant    none
-// ==/UserScript==
-
-//above: the code needed in the Greasemonkey add-on
-
-//enables strict code interpretation - prevents hard to detect errors
-'use strict';
-
 // Check whether loading is complete
 // (http://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event#Checking_whether_loading_is_already_complete):
 if(document.readyState === 'loading'){
