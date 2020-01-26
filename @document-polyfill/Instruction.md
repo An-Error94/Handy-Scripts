@@ -7,7 +7,7 @@ Our JavaScript adds two attributes on each page's `<html>` element:
 
 ## General idea of how this polyfill works
 
-The @document rule is only supported in firefox, while the [attribute selector](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors) is widely supported.
+The @document rule is only supported in Firefox (situation for the day Jan 7, 2020), while the [attribute selector](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors) is widely supported.
 You can use attribute selectors on attributes created by the script.
 
 We use a [Descendant combinator (space)](https://developer.mozilla.org/en-US/docs/Web/CSS/Descendant_combinator) to indicate that the item you are looking for is contained in an "html" element with the appropriate attribute values, i.e. it is simply on the page that has the desired address or is on the desired domain.
