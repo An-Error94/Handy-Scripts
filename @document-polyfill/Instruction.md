@@ -17,7 +17,7 @@ Now you can use the right selector of any level of complexity, referring to a pa
 
 ## Replacing the `url()` function
 
-`html[data-at-document-url="addressUrl"] `
+`html[data-at-document-url="addressUrl"] `,
 
 where `addressUrl` is the document's URL
 
@@ -46,7 +46,7 @@ html[data-at-document-url="https://developer.mozilla.org/en-US/docs/Web/CSS/@doc
 
 ## Replacing the `url-prefix()` function:
 
-```html[data-at-document-url^="addressPrefix"] ```
+```html[data-at-document-url^="addressPrefix"] ```,
 
 where `addressPrefix` is the prefix of the URL.
 
@@ -77,9 +77,7 @@ html[data-at-document-url^="https://developer.mozilla.org/en-US/docs/Web"] a {
 
 ## Replacing the `domain()` function:
 
-Use
-
-```html[data-at-document-domain|="domainSpecialString"] ```
+`html[data-at-document-domain|="domainSpecialString"] `,
 
 where `domainSpecialString` is a special string specifying the desired domain as follows:
 
@@ -102,6 +100,7 @@ A space after the selector is necessary because this is a descendant combinator.
 Use
 
 ```html[data-at-document-domain|="org-mozilla"] ```
+
 instead of
 
 ```
