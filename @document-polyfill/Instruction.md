@@ -17,13 +17,11 @@ Now you can use the right selector of any level of complexity, referring to a pa
 
 ## Replacing the `url()` function
 
-```
-html[data-at-document-url="addressUrl"]
-```
+`html[data-at-document-url="addressUrl"] `
 
 where `addressUrl` is the document's URL
 
-In other words, `html[data-at-document-url="addressUrl"]` - matches an exact URL.
+In other words, `html[data-at-document-url="addressUrl"] ` - matches an exact URL.
 
 Attention!!!
 A space after the selector is necessary because this is a descendant combinator.
@@ -32,15 +30,13 @@ A space after the selector is necessary because this is a descendant combinator.
 
 Use
 
-```html[data-at-document-url="https://developer.mozilla.org/en-US/docs/Web/CSS/@document"]```
+`html[data-at-document-url="https://developer.mozilla.org/en-US/docs/Web/CSS/@document"] `
 
 instead of
 
 ```url("https://developer.mozilla.org/en-US/docs/Web/CSS/@document")```
 
-### Example
-
-The following rule disables the display of all links (anchors) only on the page `https://developer.mozilla.org/en-US/docs/Web/CSS/@document`:
+The following selector disables the display of all links (anchors) only on the page `https://developer.mozilla.org/en-US/docs/Web/CSS/@document`:
 
 ```
 html[data-at-document-url="https://developer.mozilla.org/en-US/docs/Web/CSS/@document"] a {
@@ -50,11 +46,11 @@ html[data-at-document-url="https://developer.mozilla.org/en-US/docs/Web/CSS/@doc
 
 ## Replacing the `url-prefix()` function:
 
-```html[data-at-document-url^="addressPrefix"]```
+```html[data-at-document-url^="addressPrefix"] ```
 
 where `addressPrefix` is the prefix of the URL.
 
-In other words, `html[data-at-document-url^="addressPrefix"]` matches if the document URL starts with the value provided.
+In other words, `html[data-at-document-url^="addressPrefix"] ` matches if the document URL starts with the value provided.
 
 Attention!!!
 A space after the selector is necessary because this is a descendant combinator.
@@ -63,9 +59,7 @@ A space after the selector is necessary because this is a descendant combinator.
 
 Use
 
-```
-html[data-at-document-url^="https://developer.mozilla.org/en-US/docs/Web"]
-```
+```html[data-at-document-url^="https://developer.mozilla.org/en-US/docs/Web"] ```
 
 instead of
 
@@ -85,9 +79,7 @@ html[data-at-document-url^="https://developer.mozilla.org/en-US/docs/Web"] a {
 
 Use
 
-```
-html[data-at-document-domain|="domainSpecialString"]
-```
+```html[data-at-document-domain|="domainSpecialString"] ```
 
 where `domainSpecialString` is a special string specifying the desired domain as follows:
 
@@ -100,7 +92,7 @@ For example:
 * `com-example-developer` matches all pages in the domain "developer.example.com" and all its subdomains.
 * `com-example-strange^part` matches all pages in the domain "strange-part.example.com" and all its subdomains.
 
-In other words `html[data-at-document-domain|="domainSpecialString"]` - matches if the document URL is on the domain provided (or a subdomain of it).
+In other words `html[data-at-document-domain|="domainSpecialString"] ` - matches if the document URL is on the domain provided (or a subdomain of it).
 
 Attention!!!
 A space after the selector is necessary because this is a descendant combinator.
@@ -109,9 +101,7 @@ A space after the selector is necessary because this is a descendant combinator.
 
 Use
 
-```
-html[data-at-document-domain|="org-mozilla"]
-```
+```html[data-at-document-domain|="org-mozilla"] ```
 instead of
 
 ```
@@ -121,7 +111,7 @@ domain("mozilla.org")
 The following selector disables the display of all links (anchors) on all pages in the mozilla.org domain and all its subdomains:
 
 ```
-html[data-at-document-url|="org-mozilla"] a{
+html[data-at-document-domain|="org-mozilla"] a{
   display:none
 }
 ```
