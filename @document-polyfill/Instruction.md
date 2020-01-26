@@ -18,7 +18,7 @@ Now you can use the right selector of any level of complexity, referring to a pa
 ## Replacing the `url()` function
 
 ```
-html[data-at-document-url="addressUrl"]``
+html[data-at-document-url="addressUrl"]
 ```
 
 where `addressUrl` is the document's URL
@@ -110,8 +110,8 @@ A space after the selector is necessary because this is a descendant combinator.
 Use
 
 ```
-html[data-at-document-domain|="org-mozilla"]```
-
+html[data-at-document-domain|="org-mozilla"]
+```
 instead of
 
 ```
