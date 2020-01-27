@@ -6,7 +6,7 @@ First you need to install the script manager in your browser. List of script man
 
 
 
-``Our`` JavaScript adds two attributes on each page's `<html>` element:
+``Our`` `JavaScript` ```adds``` two attributes on each page's `<html>` element:
 
 * "data-at-document-domain": Contains the document's full domain name
 * "data-at-document-url": Contains the URL of the document.
