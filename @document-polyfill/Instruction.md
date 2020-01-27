@@ -29,8 +29,7 @@ where `addressUrl` is the document's URL
 
 In other words, `html[data-at-document-url="addressUrl"] ` - matches an exact URL.
 
-
-`Attention!!!`
+### Attention!!!
 
 A space after the selector is necessary because this is a descendant combinator.
 
@@ -46,8 +45,7 @@ instead of
 url("http://example.com/An-Error94/Handy-Scripts")
 ```
 
-
-`Attention!!!`
+### Attention!!!
 
 ```html[data-at-document-url^="http://example.com/An-Error94/Handy-Scripts"] ``` `NOT` matches URL, which begins `"https://"`! To match an address that begins with `"https: //"`, you must enter the string beginning with `"https: //"`.
 
@@ -67,8 +65,7 @@ where `addressPrefix` is the prefix of the URL.
 
 In other words, `html[data-at-document-url^="addressPrefix"] ` matches if the document URL starts with the value provided.
 
-
-`Attention!!!`
+### Attention!!!
 
 A space after the selector is necessary because this is a descendant combinator.
 
@@ -93,8 +90,7 @@ http://example.com/An-Error94/
 http://example.com/An-Error94/Handy-Scripts
 ```
 
-
-`Attention!!!`
+### Attention!!!
 
 ```html[data-at-document-url^="http://example.com/An-Er"] ``` `NOT` matches URL, which begins `"https://"`! To match an address that begins with `"https: //"`, you must enter the string beginning with `"https: //"`.
 
