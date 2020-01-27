@@ -13,6 +13,8 @@ Web browsers:
 
 [Archived MDN site about the @document rule (content from August 27, 2013)](http://web.archive.org/web/20130827170204/https://developer.mozilla.org/en-US/docs/Web/CSS/@document)
 
+[MDN site about the @document rule (current)](https://developer.mozilla.org/en-US/docs/Web/CSS/@document)
+
 [Firefox 1.5 release date: November 29, `2005` - Mozilla website about Firefox 1.5](https://website-archive.mozilla.org/www.mozilla.org/firefox_releasenotes/en-us/firefox/releases/1.5)
 
 CSS:
