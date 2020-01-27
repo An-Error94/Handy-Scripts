@@ -113,6 +113,8 @@ For example:
 * `com-example` matches all pages in the "example.com" domain and all its subdomains.
 * `com-example-abc` matches all pages in the domain "abc.example.com" and all its subdomains.
 * `com-example-strange^part` matches all pages in the domain "strange-part.example.com" and all its subdomains.
+* `com-example-abc-ghi` matches all pages in the domain "ghi.abc.example.com" and all its subdomains.
+* `com-example-strange^part-klm` matches all pages in the domain "klm.strange-part.example.com" and all its subdomains.
 
 In other words `html[data-at-document-domain|="domainSpecialString"] ` - matches if the document URL is on the domain provided (or a subdomain of it).
 
