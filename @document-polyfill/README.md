@@ -19,7 +19,7 @@ CSS:
 
 [The original version of "CSS Conditional Rules Module Level 3", which also contained the specification of the @document rule - publication date: September 11, 2012](https://www.w3.org/TR/2012/WD-css3-conditional-20120911/#at-document)
 
-[Deferred rule @document from "CSS Conditional Rules Module Level 3" to "CSS Conditional Rules Module Level 4" - publication date: `December 13, 2012`](https://www.w3.org/TR/2012/WD-css3-conditional-20121213/#changes)
+[`Deferred` rule @document from "CSS Conditional Rules Module Level 3" to "CSS Conditional Rules Module Level 4" - publication date: `December 13, 2012`](https://www.w3.org/TR/2012/WD-css3-conditional-20121213/#changes)
 
 [Current version of "CSS Conditional Rules Module Level 4" - publication date: March 31, 2019](https://drafts.csswg.org/css-conditional-4/)
 
