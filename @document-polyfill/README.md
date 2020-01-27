@@ -7,7 +7,7 @@ Note: This polyfill was created as a reaction to extremely strong indignation ag
 When I learned that there are currently no freely discussions on @document rule (I mean "CSS Conditional Rules Module Level 4
 Editor’s Draft" dated March 31, 2019), I came up with an idea of how I can personally fix this lethargy. Personally, I only needed to replace the domain() function, but I saw that I can replace the url() and url-prefix() functions in an incredibly easy way. Seeing that no one came up with what I did - I couldn't find support for the @document rule anywhere - and reading that `"The '@document' rule is at risk`; if interoperable implementations are not found, it may be removed" I decided to act and write also two other functions.
 
-Evidence of lethargy:
+Evidence of `lethargy`:
 
 Web browsers:
 
