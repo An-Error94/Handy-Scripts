@@ -105,7 +105,7 @@ html[data-at-document-url^="http://example.com/An-Er"] a {
 
 where `domainSpecialString` is a special string specifying the desired domain as follows:
 
-You should write all domains according to their decreasing importance in the hierarchy, including the top-level domain, i.e. in the reverse order of their occurrence in the address; each of them should be separated by a dash:`-` If the connector is part of a domain name, replace it with a `^`.
+You should write all domains according to their decreasing importance in the hierarchy, including the top-level domain, i.e. in the reverse order of their occurrence in the address; each of them should be separated by a dash:`-`. If the dash is part of a domain name, replace it with a `^`.
 
 For example:
 
