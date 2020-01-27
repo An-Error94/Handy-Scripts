@@ -84,6 +84,7 @@ url-prefix("http://example.com/An-Er")
 ```html[data-at-document-url^="http://example.com/An-Er"] ``` matches following URL:
 
 ```
+http://example.com/An-Er
 http://example.com/An-Err
 http://example.com/An-Error94
 http://example.com/An-Error94/
