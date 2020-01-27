@@ -6,7 +6,7 @@ First you need to install the script manager in your browser. List of script man
 
 
 
-``Our`` `JavaScript` ```adds``` two attributes on each page's `<html>` element:
+Our JavaScript adds two attributes on each page's `<html>` element:
 
 * "data-at-document-domain": Contains the document's full domain name
 * "data-at-document-url": Contains the URL of the document.
@@ -17,9 +17,9 @@ The @document rule is only supported in Firefox (situation for the day 29 Aug 20
 You can use attribute selectors on attributes created by the script.
 
 We use a [Descendant combinator (space)](https://developer.mozilla.org/en-US/docs/Web/CSS/Descendant_combinator) to indicate that the item you are looking for is contained in an "html" element with the appropriate attribute values, i.e. it is simply on the page that has the desired address or is on the desired domain.
-```
+
 Now you can use the right selector of any level of complexity, referring to a particular page element, e.g. each visited link ("a:visited" selector).
-```
+
 
 ## Replacing the `url()` function
 
