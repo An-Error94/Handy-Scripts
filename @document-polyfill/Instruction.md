@@ -36,16 +36,16 @@ A space after the selector is necessary because this is a descendant combinator.
 
 Use
 
-`html[data-at-document-url="https://developer.mozilla.org/en-US/docs/Web/CSS/@document"] `,
+`html[data-at-document-url="http://example.com/An-Error94/Handy-Scripts"] `,
 
 instead of
 
-```url("https://developer.mozilla.org/en-US/docs/Web/CSS/@document")```
+```url("http://example.com/An-Error94/Handy-Scripts")```
 
-The following selector disables the display of all links (anchors) only on the page `https://developer.mozilla.org/en-US/docs/Web/CSS/@document`:
+The following selector disables the display of all links (anchors) only on the page `http://example.com/An-Error94/Handy-Scripts`:
 
 ```
-html[data-at-document-url="https://developer.mozilla.org/en-US/docs/Web/CSS/@document"] a {
+html[data-at-document-url="http://example.com/An-Error94/Handy-Scripts"] a {
   display:none;
 }
 ```
@@ -65,18 +65,18 @@ A space after the selector is necessary because this is a descendant combinator.
 
 Use
 
-```html[data-at-document-url^="https://developer.mozilla.org/en-US/docs/Web"] ```,
+```html[data-at-document-url^="http://example.com/An-Er"] ```,
 
 instead of
 
 ```
-url-prefix("https://developer.mozilla.org/en-US/docs/Web")
+url-prefix("http://example.com/An-Er")
 ```
 
-The following selector disables the display of all links (anchors) on all pages whose URL begins with `https://developer.mozilla.org/en-US/docs/Web`:
+The following selector disables the display of all links (anchors) on all pages whose URL begins with `http://example.com/An-Er`:
 
 ```
-html[data-at-document-url^="https://developer.mozilla.org/en-US/docs/Web"] a {
+html[data-at-document-url^="http://example.com/An-Er"] a {
   display:none;
 }
 ```
@@ -93,7 +93,7 @@ For example:
 
 * `com` matches all top-level "com" domains and all subdomains thereof.
 * `com-example` matches all pages in the "example.com" domain and all its subdomains.
-* `com-example-developer` matches all pages in the domain "developer.example.com" and all its subdomains.
+* `com-example-abc` matches all pages in the domain "abc.example.com" and all its subdomains.
 * `com-example-strange^part` matches all pages in the domain "strange-part.example.com" and all its subdomains.
 
 In other words `html[data-at-document-domain|="domainSpecialString"] ` - matches if the document URL is on the domain provided (or a subdomain of it).
@@ -105,18 +105,18 @@ A space after the selector is necessary because this is a descendant combinator.
 
 Use
 
-```html[data-at-document-domain|="org-mozilla"] ```,
+```html[data-at-document-domain|="com-example"] ```,
 
 instead of
 
 ```
-domain("mozilla.org")
+domain("example.com")
 ```
 
 The following selector disables the display of all links (anchors) on all pages in the mozilla.org domain and all its subdomains:
 
 ```
-html[data-at-document-domain|="org-mozilla"] a{
+html[data-at-document-domain|="com-example"] a{
   display:none
 }
 ```
