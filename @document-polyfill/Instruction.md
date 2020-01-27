@@ -47,7 +47,8 @@ url("http://example.com/An-Error94/Handy-Scripts")
 
 ### Attention!!!
 
-```html[data-at-document-url^="http://example.com/An-Error94/Handy-Scripts"] ``` `NOT` matches URL, which begins `"https://"`! To match an address that begins with `"https: //"`, you must enter the string beginning with `"https: //"`.
+```html[data-at-document-url^="http://example.com/An-Error94/Handy-Scripts"] ``` `NOT` matches URL, which begins `"https://"`!
+To match an address that begins with `"https: //"`, you must enter the string beginning with `"https: //"`.
 
 The following selector disables the display of all links (anchors) only on the page `http://example.com/An-Error94/Handy-Scripts`:
 
@@ -92,7 +93,8 @@ http://example.com/An-Error94/Handy-Scripts
 
 ### Attention!!!
 
-```html[data-at-document-url^="http://example.com/An-Er"] ``` `NOT` matches URL, which begins `"https://"`! To match an address that begins with `"https: //"`, you must enter the string beginning with `"https: //"`.
+```html[data-at-document-url^="http://example.com/An-Er"] ``` `NOT` matches URL, which begins `"https://"`!
+To match an address that begins with `"https: //"`, you must enter the string beginning with `"https: //"`.
 
 The following selector disables the display of all links (anchors) on all pages whose URL begins with `http://example.com/An-Er`:
 
