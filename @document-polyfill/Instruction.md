@@ -30,7 +30,6 @@ where `addressUrl` is the document's URL
 In other words, `html[data-at-document-url="addressUrl"] ` - matches an exact URL.
 
 ### Attention!!!
-
 A space after the selector is necessary because this is a descendant combinator.
 
 ### Example
@@ -46,7 +45,6 @@ url("http://example.com/An-Error94/Handy-Scripts")
 ```
 
 ### Attention!!!
-
 ```html[data-at-document-url="http://example.com/An-Error94/Handy-Scripts"] ``` NOT matches URL, which begins `"https://"`! To match an address that begins with `"https: //"`, you must enter the string beginning with `"https: //"`.
 
 The following selector disables the display of all links (anchors) only on the page `http://example.com/An-Error94/Handy-Scripts`:
@@ -66,7 +64,6 @@ where `addressPrefix` is the prefix of the URL.
 In other words, `html[data-at-document-url^="addressPrefix"] ` matches if the document URL starts with the value provided.
 
 ### Attention!!!
-
 A space after the selector is necessary because this is a descendant combinator.
 
 ### Example
@@ -92,7 +89,6 @@ http://example.com/An-Error94/Handy-Scripts
 ```
 
 ### Attention!!!
-
 ```html[data-at-document-url^="http://example.com/An-Er"] ``` NOT matches URL, which begins `"https://"`! To match an address that begins with `"https: //"`, you must enter the string beginning with `"https: //"`.
 
 The following selector disables the display of all links (anchors) on all pages whose URL begins with `http://example.com/An-Er`:
@@ -120,7 +116,7 @@ For example:
 
 In other words `html[data-at-document-domain|="domainSpecialString"] ` - matches if the document URL is on the domain provided (or a subdomain of it).
 
-Attention!!!
+### Attention!!!
 A space after the selector is necessary because this is a descendant combinator.
 
 ### Example
