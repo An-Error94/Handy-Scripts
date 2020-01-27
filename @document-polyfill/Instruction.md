@@ -113,7 +113,7 @@ instead of
 domain("example.com")
 ```
 
-The following selector disables the display of all links (anchors) on all pages in the mozilla.org domain and all its subdomains:
+The following selector disables the display of all links (anchors) on all pages in the `example.com` domain and all its subdomains:
 
 ```
 html[data-at-document-domain|="com-example"] a{
