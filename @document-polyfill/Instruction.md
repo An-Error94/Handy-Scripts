@@ -40,7 +40,9 @@ Use
 
 instead of
 
-```url("http://example.com/An-Error94/Handy-Scripts")```
+```
+url("http://example.com/An-Error94/Handy-Scripts")
+```
 
 The following selector disables the display of all links (anchors) only on the page `http://example.com/An-Error94/Handy-Scripts`:
 
@@ -72,6 +74,11 @@ instead of
 ```
 url-prefix("http://example.com/An-Er")
 ```
+
+```html[data-at-document-url^="http://example.com/An-Er"] ``` matches following URL:
+
+
+
 
 The following selector disables the display of all links (anchors) on all pages whose URL begins with `http://example.com/An-Er`:
 
