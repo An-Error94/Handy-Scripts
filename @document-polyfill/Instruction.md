@@ -81,7 +81,7 @@ instead of
 url-prefix("http://example.com/An-Er")
 ```
 
-```html[data-at-document-url^="http://example.com/An-Er"] ``` x matches e.g. the following URL:
+```html[data-at-document-url^="http://example.com/An-Er"] ``` matches e.g. the following URL:
 
 ```
 http://example.com/An-Er
