@@ -2,7 +2,7 @@ The goal of this polyfill is to replace the CSS `@document` rule, and the `url()
 
 The way the polyfill works is described in the [instruction.md](Instruction.md) file.
 
-Note: This polyfill was created as a reaction to extremely strong indignation against: on the one hand, the `non-Firefox` browser developers have `not implemented` this very useful rule for almost `14 years!` on the other hand, `nobody work(?)` on this topic since Dec 13, 2012 (in the latest document - dated Mar 31, 2019 - editorial's draft which is destinated only for discussion, there is not even mentioned the @document rule) - i.e. `for 6 years`!
+Note: This polyfill was created as a reaction to extremely strong indignation against: on the one hand, the `non-Firefox` browser developers have `not implemented` this very useful rule for almost `14 years!` on the other hand, `nobody work(?)` on this topic since December 13, 2012 (in the latest document - dated March 31, 2019 - editorial's draft which is destinated only for discussion, there is not even mentioned the @document rule) - i.e. `for 6 years`!
 
 When I learned that there are currently no freely discussions on @document rule (I mean "CSS Conditional Rules Module Level 4
 Editor’s Draft" dated March 31, 2019), I came up with an idea of how I can personally fix this lethargy. Personally, I only needed to replace the domain() function, but I saw that I can replace the url() and url-prefix() functions in an incredibly easy way. Seeing that no one came up with what I did - I couldn't find support for the @document rule anywhere - and reading that `"The '@document' rule is at risk`; if interoperable implementations are not found, it may be removed" I decided to act and write also two other functions.
@@ -13,7 +13,7 @@ Web browsers:
 
 [Archived MDN site about the @document rule (content from August 27, 2013)](http://web.archive.org/web/20130827170204/https://developer.mozilla.org/en-US/docs/Web/CSS/@document)
 
-[Firefox 1.5 release date: Nov 29, `2005` - Mozilla website about Firefox 1.5](https://website-archive.mozilla.org/www.mozilla.org/firefox_releasenotes/en-us/firefox/releases/1.5)
+[Firefox 1.5 release date: November 29, `2005` - Mozilla website about Firefox 1.5](https://website-archive.mozilla.org/www.mozilla.org/firefox_releasenotes/en-us/firefox/releases/1.5)
 
 CSS:
 
