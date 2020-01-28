@@ -23,7 +23,7 @@ Now you can use the right selector of any level of complexity, referring to a pa
 
 ## Replacing the `url()` function
 
-`html[data-at-document-url="addressUrl"] `,
+"`html[data-at-document-url="addressUrl"] `"
 
 where `addressUrl` is the document's URL
 
@@ -57,9 +57,7 @@ html[data-at-document-url="http://example.com/An-Error94/Handy-Scripts"] a {
 
 ## Replacing the `url-prefix()` function:
 
-```html[data-at-document-url^="addressPrefix"] ```,
-
-where `addressPrefix` is the prefix of the URL.
+```html[data-at-document-url^="addressPrefix"] ```where `addressPrefix` is the prefix of the URL.
 
 In other words, `html[data-at-document-url^="addressPrefix"] ` matches if the document URL starts with the value provided.
 
@@ -70,9 +68,7 @@ A space after the selector is necessary because this is a descendant combinator.
 
 Use
 
-```html[data-at-document-url^="http://example.com/An-Er"] ```,
-
-instead of
+```html[data-at-document-url^="http://example.com/An-Er"] ```instead of
 
 ```
 url-prefix("http://example.com/An-Er")
@@ -101,9 +97,7 @@ html[data-at-document-url^="http://example.com/An-Er"] a {
 
 ## Replacing the `domain()` function:
 
-`html[data-at-document-domain|="domainSpecialString"] `,
-
-where `domainSpecialString` is a special string specifying the desired [domain](https://en.wikipedia.org/wiki/Domain_name) as follows:
+`html[data-at-document-domain|="domainSpecialString"] `where `domainSpecialString` is a special string specifying the desired [domain](https://en.wikipedia.org/wiki/Domain_name) as follows:
 
 You should write all [labels](https://en.wikipedia.org/wiki/Domain_name#Domain_name_syntax) of [fully qualified domain name](https://en.wikipedia.org/wiki/Fully_qualified_domain_name) according to their decreasing importance in the hierarchy (the hierarchy of domains decrease from the right to the left), including the top-level domain. Each of label should be separated by a dash:`-`. If the dash is part of a label, replace it with a `^`.
 
@@ -127,9 +121,7 @@ A space after the selector is necessary because this is a descendant combinator.
 
 Use
 
-```html[data-at-document-domain|="com-example"] ``` 
-
-instead of
+```html[data-at-document-domain|="com-example"] ```instead of
 
 ```
 domain("example.com")
