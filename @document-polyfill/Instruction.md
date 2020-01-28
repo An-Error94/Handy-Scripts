@@ -34,9 +34,7 @@ A space after the selector is necessary because this is a descendant combinator.
 
 Use
 
-`html[data-at-document-url="http://example.com/An-Error94/Handy-Scripts"] `,
-
-instead of
+`html[data-at-document-url="http://example.com/An-Error94/Handy-Scripts"] ` instead of
 
 ```
 url("http://example.com/An-Error94/Handy-Scripts")
