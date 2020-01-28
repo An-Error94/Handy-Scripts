@@ -23,9 +23,7 @@ Now you can use the right selector of any level of complexity, referring to a pa
 
 ## Replacing the `url()` function
 
-"`html[data-at-document-url="addressUrl"] `"
-
-where `addressUrl` is the document's URL
+`html[data-at-document-url="addressUrl"] ` where `addressUrl` is the document's URL
 
 In other words, `html[data-at-document-url="addressUrl"] ` - matches an exact URL.
 
