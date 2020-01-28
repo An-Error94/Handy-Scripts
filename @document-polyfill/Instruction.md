@@ -127,7 +127,7 @@ A space after the selector is necessary because this is a descendant combinator.
 
 Use
 
-```html[data-at-document-domain|="com-example"] ```,
+```html[data-at-document-domain|="com-example"] ``` 
 
 instead of
 
