@@ -103,9 +103,11 @@ html[data-at-document-url^="http://example.com/An-Er"] a {
 
 `html[data-at-document-domain|="domainSpecialString"] `,
 
-where `domainSpecialString` is a special string specifying the desired domain as follows:
+where `domainSpecialString` is a special string specifying the desired [domain](https://en.wikipedia.org/wiki/Domain_name) as follows:
 
-You should write all domains according to their decreasing importance in the hierarchy ([The hierarchy of domains decrease from the right to the left](https://en.wikipedia.org/wiki/Domain_name#Domain_name_syntax)), including the top-level domain, i.e. in the reverse order than their occurrence in the address; each of them should be separated by a dash:`-`. If the dash is part of a domain name, replace it with a `^`.
+You should write all [labels](https://en.wikipedia.org/wiki/Domain_name#Domain_name_syntax) of [fully qualified domain name](https://en.wikipedia.org/wiki/Fully_qualified_domain_name) according to their decreasing importance in the hierarchy (The hierarchy of domains decrease from the right to the left), including the top-level domain. Each of label should be separated by a dash:`-`. If the dash is part of a label, replace it with a `^`.
+
+In other words, find all the words at the beginning of the URL (except the words immediately before ": //") that appear before the first occurrence of a single "/". These words are grouped into elements called "labels". Each label is separated by a period (`.`). On `domainSpecialString`, write these labels in reverse order than they appear in the URL and separate them with a dash: `-`. If the dash is part of a label, replace it with a `^`.
 
 For example:
 
