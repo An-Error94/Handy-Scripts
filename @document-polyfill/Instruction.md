@@ -4,15 +4,14 @@ First you need to install the script manager in your browser. [Click here to go 
 
 Now you can use user style sheets. [Find the extension suitable for your browser on this page](https://github.com/openstyles/stylus/wiki/Stylish-alternatives) and install it. You can also try to manually add the user style sheet to your browser, but it is not possible for every browser! - example for `Firefox`: [Follow the instructions on this page](http://kb.mozillazine.org/UserContent.css), if you have Firefox version at least 69 - you need to change the `toolkit.legacyUserProfileCustomizations.styles preferences` to true in `about:config`.
 
+## General idea of how this polyfill works
+
+The @document rule is only supported in Firefox (situation for the day 29 Aug 2019 - see  [content and date of the last update of the JSON file containing compatibility data for the @document rule](https://github.com/mdn/browser-compat-data/blob/master/css/at-rules/document.json)), while the [attribute selector](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors) is widely supported. You can use attribute selectors on attributes created by the script.
 
 Our JavaScript adds two attributes on each page's `<html>` element:
 
 * "data-at-document-domain": Contains the document's full domain name
 * "data-at-document-url": Contains the URL of the document.
-
-## General idea of how this polyfill works
-
-The @document rule is only supported in Firefox (situation for the day 29 Aug 2019 - see  [content and date of the last update of the JSON file containing compatibility data for the @document rule](https://github.com/mdn/browser-compat-data/blob/master/css/at-rules/document.json)), while the [attribute selector](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors) is widely supported. You can use attribute selectors on attributes created by the script.
 
 We use a [Descendant combinator (space)](https://developer.mozilla.org/en-US/docs/Web/CSS/Descendant_combinator) to indicate that the item you are looking for is contained in an "html" element with the appropriate attribute values, i.e. it is simply on the page that has the desired address or is on the desired domain.
 
