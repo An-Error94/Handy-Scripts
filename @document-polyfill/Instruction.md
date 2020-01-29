@@ -1,9 +1,8 @@
 # Instructions on getting the polyfill working
 
-First you need to install the script manager in your browser. List of script managers for browsers:
-[OpenUserJS.org - The home of Free and Open Source Software (FOSS) user scripts](https://github.com/OpenUserJS/OpenUserJS.org/wiki/Userscript-Beginners-HOWTO), 
+First you need to install the script manager in your browser. [Click here to go to the page listing the script managers for the most popular web browsers](https://github.com/OpenUserJS/OpenUserJS.org/wiki/Userscript-Beginners-HOWTO). Then install [this script](JavaScript.js).
 
-
+Now you can use user style sheets. [Find the extension suitable for your browser on this page](https://github.com/openstyles/stylus/wiki/Stylish-alternatives) and install it. You can also try to manually add the user style sheet to your browser, but it is not possible for every browser! - example for `Firefox`: [Follow the instructions on this page](http://kb.mozillazine.org/UserContent.css), if you have Firefox version at least 69 - you need to change the `toolkit.legacyUserProfileCustomizations.styles preferences` to true in `about:config`.
 
 
 Our JavaScript adds two attributes on each page's `<html>` element:
