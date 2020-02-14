@@ -12,8 +12,8 @@ The @document rule is only supported in Firefox (situation for the day 29 Aug 20
 
 Our JavaScript adds two attributes on each page's `<html>` element:
 
-* "data-at-document-domain": Contains the document's full domain name
-* "data-at-document-url": Contains the URL of the document.
+* "data-a-domain": Contains the document's full domain name
+* "data-a-url": Contains the URL of the document.
 
 We use a [Descendant combinator (space)](https://developer.mozilla.org/en-US/docs/Web/CSS/Descendant_combinator) to indicate that the item you are looking for is contained in an "html" element with the appropriate attribute values, i.e. it is simply on the page that has the desired address or is on the desired domain.
 
@@ -22,9 +22,9 @@ Now you can use the right selector of any level of complexity, referring to a pa
 
 ## Replacing the `url()` function
 
-`html[data-at-document-url="addressUrl"] ` where `addressUrl` is the document's URL
+`html[data-a-url="addressUrl"] ` where `addressUrl` is the document's URL
 
-In other words, `html[data-at-document-url="addressUrl"] ` - matches an exact URL.
+In other words, `html[data-a-url="addressUrl"] ` - matches an exact URL.
 
 ### Attention!!!
 A space after the selector is necessary because this is a descendant combinator.
@@ -33,28 +33,28 @@ A space after the selector is necessary because this is a descendant combinator.
 
 Use
 
-`html[data-at-document-url="http://example.com/An-Error94/Handy-Scripts"] ` instead of
+`html[data-a-url="http://example.com/An-Error94/Handy-Scripts"] ` instead of
 
 ```
 url("http://example.com/An-Error94/Handy-Scripts")
 ```
 
 ### Attention!!!
-```html[data-at-document-url="http://example.com/An-Error94/Handy-Scripts"] ``` NOT matches URL, which begins `https://`! To match an address that begins with `https: //`, you must enter the string beginning with `https: //`.
+```html[data-a-url="http://example.com/An-Error94/Handy-Scripts"] ``` NOT matches URL, which begins `https://`! To match an address that begins with `https: //`, you must enter the string beginning with `https: //`.
 
 The following selector disables the display of all links (anchors) only on the page `http://example.com/An-Error94/Handy-Scripts`:
 
 ```
-html[data-at-document-url="http://example.com/An-Error94/Handy-Scripts"] a {
+html[data-a-url="http://example.com/An-Error94/Handy-Scripts"] a {
   display:none;
 }
 ```
 
 ## Replacing the `url-prefix()` function:
 
-```html[data-at-document-url^="addressPrefix"] ```where `addressPrefix` is the prefix of the URL.
+```html[data-a-url^="addressPrefix"] ```where `addressPrefix` is the prefix of the URL.
 
-In other words, `html[data-at-document-url^="addressPrefix"] ` matches if the document URL starts with the value provided.
+In other words, `html[data-a-url^="addressPrefix"] ` matches if the document URL starts with the value provided.
 
 ### Attention!!!
 A space after the selector is necessary because this is a descendant combinator.
@@ -63,13 +63,13 @@ A space after the selector is necessary because this is a descendant combinator.
 
 Use
 
-```html[data-at-document-url^="http://example.com/An-Er"] ```instead of
+```html[data-a-url^="http://example.com/An-Er"] ```instead of
 
 ```
 url-prefix("http://example.com/An-Er")
 ```
 
-```html[data-at-document-url^="http://example.com/An-Er"] ``` matches e.g. the following URL:
+```html[data-a-url^="http://example.com/An-Er"] ``` matches e.g. the following URL:
 
 ```
 http://example.com/An-Er
@@ -80,19 +80,19 @@ http://example.com/An-Error94/Handy-Scripts
 ```
 
 ### Attention!!!
-```html[data-at-document-url^="http://example.com/An-Er"] ``` NOT matches URL, which begins `https://`! To match an address that begins with `https: //`, you must enter the string beginning with `https: //`.
+```html[data-a-url^="http://example.com/An-Er"] ``` NOT matches URL, which begins `https://`! To match an address that begins with `https: //`, you must enter the string beginning with `https: //`.
 
 The following selector disables the display of all links (anchors) on all pages whose URL begins with `http://example.com/An-Er`:
 
 ```
-html[data-at-document-url^="http://example.com/An-Er"] a {
+html[data-a-url^="http://example.com/An-Er"] a {
   display:none;
 }
 ```
 
 ## Replacing the `domain()` function:
 
-`html[data-at-document-domain|="domainSpecialString"] `where `domainSpecialString` is a special string specifying the desired [domain](https://en.wikipedia.org/wiki/Domain_name) as follows:
+`html[data-a-domain|="domainSpecialString"] `where `domainSpecialString` is a special string specifying the desired [domain](https://en.wikipedia.org/wiki/Domain_name) as follows:
 
 You should write all [labels](https://en.wikipedia.org/wiki/Domain_name#Domain_name_syntax) of [fully qualified domain name](https://en.wikipedia.org/wiki/Fully_qualified_domain_name) according to their decreasing importance in the hierarchy (the hierarchy of domains decrease from the right to the left), including the top-level domain. Each of label should be separated by a dash:`-`. If the dash is part of a label, replace it with a `^`.
 
@@ -108,7 +108,7 @@ For example:
 * `com-example-abc-ghi` matches all pages in the domain `ghi.abc.example.com` and all its subdomains.
 * `com-example-strange^part-klm` matches all pages in the domain `klm.strange-part.example.com` and all its subdomains.
 
-In other words `html[data-at-document-domain|="domainSpecialString"] ` - matches if the document URL is on the domain provided (or a subdomain of it).
+In other words `html[data-a-domain|="domainSpecialString"] ` - matches if the document URL is on the domain provided (or a subdomain of it).
 
 ### Attention!!!
 A space after the selector is necessary because this is a descendant combinator.
@@ -117,7 +117,7 @@ A space after the selector is necessary because this is a descendant combinator.
 
 Use
 
-```html[data-at-document-domain|="com-example"] ```instead of
+```html[data-a-domain|="com-example"] ```instead of
 
 ```
 domain("example.com")
@@ -126,7 +126,7 @@ domain("example.com")
 The following selector disables the display of all links (anchors) on all pages in the `example.com` domain and all its subdomains:
 
 ```
-html[data-at-document-domain|="com-example"] a{
+html[data-a-domain|="com-example"] a{
   display:none
 }
 ```
