@@ -35,11 +35,11 @@ function atDocumentPolyfill(){
 	if(domainWithHyphen != "-") {
 
 // Add a data attribute to the "html" element (https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/data-*)
-		document.querySelector('html').setAttribute('data-at-document-domain', domainWithHyphen);
+		document.querySelector('html').setAttribute('data-a-domain', domainWithHyphen);
 
 // Read the document URL (this is read-only)
 		url = document.URL;
 
-		document.querySelector('html').setAttribute('data-at-document-url', url);
+		document.querySelector('html').setAttribute('data-a-url', url);
 	}
 }
