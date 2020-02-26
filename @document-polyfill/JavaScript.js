@@ -1,6 +1,3 @@
-//Licence: GNU Lesser General Public License v3.0
-//Text of this licence is available on webpage: https://github.com/An-Error94/Handy-Scripts/blob/master/LICENSE
-
 // Check whether loading is complete
 // (http://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event#Checking_whether_loading_is_already_complete):
 if(document.readyState === 'loading'){
@@ -31,10 +28,6 @@ function atDocumentPolyfill(){
 		domainWithHyphen = domainWithHyphen+table[i]+'-';
 	}
 
-// --------------------- When the page opens, "document.location.hostname" returns an empty string.
-// Changing the attributes given to it when it was first loaded
-// would destroy the information about the origin of this site and thus
-// prevent the use of dedicated selectors for websites based on its address
 	if(domainWithHyphen != "-") {
 
 // Add a data attribute to the "html" element (https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/data-*)
