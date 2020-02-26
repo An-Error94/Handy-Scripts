@@ -1,3 +1,6 @@
+//Licence: GNU Lesser General Public License v3.0
+//Text of this licence is available on webpage: https://github.com/An-Error94/Handy-Scripts/blob/master/LICENSE
+
 // Check whether loading is complete
 // (http://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event#Checking_whether_loading_is_already_complete):
 if(document.readyState === 'loading'){
