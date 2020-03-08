@@ -8,7 +8,7 @@ Now you can use @document-polyfill in the user stylesheet.
 
 ## General idea of how this polyfill works
 
-The [@document rule](https://developer.mozilla.org/en-US/docs/Web/CSS/@document) is only supported in Firefox (situation for the day 5 Feb 2020 - see  [content and date of the last update of the JSON file containing compatibility data for the @document rule](https://github.com/mdn/browser-compat-data/blob/master/css/at-rules/document.json)), while the [attribute selector](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors) is widely supported. You can use attribute selectors on attributes created by the script.
+The [@document rule](https://developer.mozilla.org/en-US/docs/Web/CSS/@document#Browser_compatibility) is only supported in Firefox (situation for the day 5 Feb 2020 - see  [content and date of the last update of the JSON file containing compatibility data for the @document rule](https://github.com/mdn/browser-compat-data/blob/master/css/at-rules/document.json)), while the [attribute selector](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors) is widely supported. You can use attribute selectors on attributes created by the script.
 
 Our JavaScript adds two attributes on each page's `<html>` element:
 
