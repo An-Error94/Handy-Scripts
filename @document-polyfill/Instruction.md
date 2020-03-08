@@ -12,7 +12,7 @@ The [@document rule](https://developer.mozilla.org/en-US/docs/Web/CSS/@document#
 
 Our JavaScript adds two attributes on each page's `<html>` element:
 
-* "data-a-domain": Contains the document's full domain name
+* "data-a-domain": Contains the document's full domain name (fully qualified domain name)
 * "data-a-url": Contains the URL of the document.
 
 We use a [Descendant combinator (space)](https://developer.mozilla.org/en-US/docs/Web/CSS/Descendant_combinator) to indicate that the item you are looking for is contained in an "html" element with the appropriate attribute values, i.e. it is simply on the page that has the desired address or is on the desired domain.
