@@ -21,7 +21,7 @@ Now you can use the right selector of any level of complexity, referring to a pa
 
 ## One additionally word from author: Specificity
 
-To make sure (brutally...) that the rule will be executed - taking into account the [Specificity](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance#To_summarize) - you may add ` !important` after your rule. Warning! There must be a space before the exclamation mark, eg. `a:visited` replace by `a:visited !important;`, `display:none !important;`.
+To make sure (brutally...) that the rule will be executed - taking into account the [Specificity](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance#To_summarize) - you may add ` !important` after your rule. Warning! There must be a space before the exclamation mark, eg. `a:visited` replace by `a:visited !important;`, `display:none;` replace by `display:none !important;`.
 
 ## Replacing the `url()` function
 
