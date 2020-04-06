@@ -33,19 +33,19 @@ A space after the selector is necessary because this is a descendant combinator.
 
 Use
 
-`html[data-a-url="http://example.com/An-Error94/Handy-Scripts"] ` instead of
+`html[data-a-url="https://example.com/An-Error94/Handy-Scripts"] ` instead of
 
 ```
-url("http://example.com/An-Error94/Handy-Scripts")
+url("https://example.com/An-Error94/Handy-Scripts")
 ```
 
 ### Attention!!!
 ```html[data-a-url="http://example.com/An-Error94/Handy-Scripts"] ``` NOT matches URL, which begins `https://`! To match an address that begins with `https://`, you must enter the string beginning with `https://`.
 
-The following selector disables the display of all links (anchors) only on the page `http://example.com/An-Error94/Handy-Scripts`:
+The following selector disables the display of all links (anchors) only on the page `https://example.com/An-Error94/Handy-Scripts`:
 
 ```
-html[data-a-url="http://example.com/An-Error94/Handy-Scripts"] a {
+html[data-a-url="https://example.com/An-Error94/Handy-Scripts"] a {
   display:none;
 }
 ```
@@ -63,29 +63,29 @@ A space after the selector is necessary because this is a descendant combinator.
 
 Use
 
-```html[data-a-url^="http://example.com/An-Er"] ```instead of
+```html[data-a-url^="https://example.com/An-Er"] ```instead of
 
 ```
-url-prefix("http://example.com/An-Er")
+url-prefix("https://example.com/An-Er")
 ```
 
-```html[data-a-url^="http://example.com/An-Er"] ``` matches e.g. the following URL:
+```html[data-a-url^="https://example.com/An-Er"] ``` matches e.g. the following URL:
 
 ```
-http://example.com/An-Er
-http://example.com/An-Err
-http://example.com/An-Error94
-http://example.com/An-Error94/
-http://example.com/An-Error94/Handy-Scripts
+https://example.com/An-Er
+https://example.com/An-Err
+https://example.com/An-Error94
+https://example.com/An-Error94/
+https://example.com/An-Error94/Handy-Scripts
 ```
 
 ### Attention!!!
 ```html[data-a-url^="http://example.com/An-Er"] ``` NOT matches URL, which begins `https://`! To match an address that begins with `https://`, you must enter the string beginning with `https://`.
 
-The following selector disables the display of all links (anchors) on all pages whose URL begins with `http://example.com/An-Er`:
+The following selector disables the display of all links (anchors) on all pages whose URL begins with `https://example.com/An-Er`:
 
 ```
-html[data-a-url^="http://example.com/An-Er"] a {
+html[data-a-url^="https://example.com/An-Er"] a {
   display:none;
 }
 ```
