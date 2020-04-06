@@ -17,8 +17,11 @@ Our JavaScript adds two attributes on each page's `<html>` element:
 
 We use a [Descendant combinator (space)](https://developer.mozilla.org/en-US/docs/Web/CSS/Descendant_combinator) to indicate that the item you are looking for is contained in an "html" element with the appropriate attribute values, i.e. it is simply on the page that has the desired address or is on the desired domain.
 
-Now you can use the right selector of any level of complexity, referring to a particular page element, e.g. each visited link (`a:visited` selector).
+Now you can use the right selector of any level of complexity, referring to a particular page element, e.g. each visited link (`a:visited;` selector).
 
+## One additionally word from author: Specificity
+
+To make sure (brutally...) that the rule will be executed - taking into account the [Specificity](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance#To_summarize) - you may add ` !important` after your rule. Warning! There must be a space before the exclamation mark, eg. `a:visited` replace by `a:visited !important;`, `display:none !important;`.
 
 ## Replacing the `url()` function
 
