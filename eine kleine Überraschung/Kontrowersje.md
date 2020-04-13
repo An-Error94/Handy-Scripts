@@ -1,4 +1,5 @@
-Konsola jest lepsza niż `alert()`, który potrafi mieć max. 1000 znaków, a nie zawsze się pokazuje - sprawdzenie na co wskazuje  `this`:
+# console.log() — ~~alert()~~
+pojemność > 1000 znaków, zawsze działa, np.
 
 `console.log(new XMLSerializer().serializeToString(this));`
 
