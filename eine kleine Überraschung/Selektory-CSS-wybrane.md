@@ -1,5 +1,5 @@
-Selektor|Dopasowuje element|Przykład|Objaśnienie|*
----|---|---|---|---
+Selektor|Dopasowuje element|Przykład
+---|---|---
 [attr]|z atrybutem o nazwie `attr`|[id]
 [attr="value"]|z atrybutem o nazwie `attr`, którego wartością jest dokładnie `value`
 [attr~="value"]|z atrybutem o nazwie `attr`, którego wartością jest lista słów oddzielonych białymi znakami, z których jedno to właśnie `value`
@@ -13,6 +13,11 @@ spacja|[przodek]spacja[`dopasowywany`]
 \>|[rodzic]>[`dopasowywane bezpośrednie dziecko`]
 ~|[rodzeństwo wyżej w kodzie strony]~[`dopasowywany`]
 +|[rodzeństwo BEZPOŚREDNIO przed w kodzie strony]+[`dopasowywany`]
+:active|LVHA: aktywowany przez użytkownika element
+:checked|włączone: `radio`, `checkbox` lub `option`; `option` – w pewnych przeglądarkach ograniczone możliwości ostylowania
+:focus|kliknięty lub wybrany przy pomocy klawisza "Tab" na klawiaturze
+:focus-within|element, który ma `:focus` lub który zawiera element, który ma `:focus`
+:hover|nad którym jest kursor myszy; jeśli urządzenie dotykowe: bardzo różna obsługa
 
 
 
@@ -23,5 +28,6 @@ spacja|[przodek]spacja[`dopasowywany`]
 
 
 
+LVHA - Reguła LVHA: `:link`, `:visited`, `:hover`, `:active` – kolejność umieszczania w kodzie CSS pseudoklas związanych z łączem, w kolejności: od lewej
 
 *- data aktualizacji informacji w danym wierszu: miesiąc (zapisany liczbą rzymską) i cyfra jedności roku
