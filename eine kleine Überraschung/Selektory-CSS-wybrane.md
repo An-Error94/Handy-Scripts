@@ -3,7 +3,7 @@ Selektor|Dopasowuje element
 ---|---
 [attr]|z atrybutem o nazwie `attr`
 [attr="value"]|z atrybutem o nazwie `attr`, którego wartością jest dokładnie `value`
-[attr~="value"]|z atrybutem o nazwie `attr`, którego wartością jest lista słów oddzielonych białymi znakami, z których jedno to właśnie `value`
+[attr~="value"]|z atrybutem o nazwie `attr`, którego wartością są słowa oddzielone od siebie białymi znakami, gdzie jedno to właśnie `value`
 [attr\|="value"]|z atrybutem o nazwie `attr`, którego wartość to dokładnie `value` albo zaczyna się od `value`, po którym bezpośrednio jest łącznik/minus (-) (U+002D)
 [attr^="value"]|z atrybutem o nazwie `attr`, którego wartość zaczyna się od `value`
 [attr$="value"]|z atrybutem o nazwie `attr`, którego wartość kończy się na `value`
