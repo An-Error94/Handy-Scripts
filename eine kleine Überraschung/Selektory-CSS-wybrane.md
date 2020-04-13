@@ -22,7 +22,13 @@ spacja|[przodek]spacja[`dopasowywany`]
 :link|LVHA:każdy nieodwiedzony `a`, `area` lub `link`, który ma atrybut `href`
 :visited|każdy odwiedzony link; ograniczone właściwości z uwagi na prywatność
 :target|jeśli jest on celem aktualnie użytego łącza wewnętrznego
-:nth-child()|o pozycji wśród węzłów o wspólnym rodzicu, określonej liczbą w nawiasie (numeracja od 1) która może być postaci: `An+B`, gdzie `A`,`B` to dziesiętne liczby całkowite; można pominąć albo część `An+` albo `+B` – pominięte części są uznawane za `0`; `A` może być równe `-1`, wtedy `1` można pominąć; `B` może być ujemne, wtedy należy zastąpić znak `+` znakiem `-`; `n` automatycznie przybiera wartości od `0` w górę|`:nth-child(7)`, `:nth-child(5n)`, `:nth-child(3n+4)`, `:nth-child(-n+3)`, `p:nth-child(n+8):nth-child(-n+15)`
+:nth-child()|spośród węzłów o **wspólnym rodzicu**, o pozycji określonej liczbą w nawiasie (numeracja od `1`) która może być postaci: `An+B`, gdzie `A`,`B` to dziesiętne liczby całkowite; można pominąć część `An+` lub `+B` – pominięte części są uznawane za `0`; `A` może być równe `-1`, wtedy `1` można pominąć; `B` może być ujemne, wtedy trzeba zastąpić znak `+` znakiem `-`; `n` automatycznie przybiera wartości od `0` w górę|`:nth-child(7)`, `:nth-child(5n)`, `:nth-child(3n+4)`, `:nth-child(-n+3)`, `p:nth-child(n+8):nth-child(-n+15)`
+:nth-last-child()|to samo co :nth-child() - numeracja pozycji od tyłu
+:nth-of-type()|spośród węzłów __**tego samego typu** o wspólnym rodzicu__ (**LEPSZY**) o pozycji określonej liczbą w nawiasie (numeracja od 1), która może być postaci: `An+B`, gdzie `A`,`B` to dziesiętne liczby całkowite, wśród węzłów tego samego typu o wspólnym rodzicu; można pominąć albo część `An+` albo `+B` – pominięte części są uznawane za `0`; `A` może być równe `-1`, wtedy `1` można pominąć; `B` może być ujemne, wtedy należy zastąpić znak `+` znakiem `-`; `n` automatycznie przybiera wartości od `0` w górę
+:nth-last-of-type()|to samo co :nth-of-type() - numeracja pozycji od tyłu
+::before|tworzy niezaznaczalne i nieobecne w DOM dziecko danego elementu PRZED nim, które objęte jest formatowaniem tego elementu. Składnia - poniżej
+::after|identyczny do ::before, jedyna różnica: dodaje specyficzne dziecko PO elemencie
+
 
 
 
