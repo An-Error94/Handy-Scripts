@@ -8,7 +8,7 @@ Selektor|Dopasowuje element
 [attr^="value"]|z atrybutem o nazwie `attr`, którego wartość zaczyna się od `value`
 [attr$="value"]|z atrybutem o nazwie `attr`, którego wartość kończy się na `value`
 [attr*="value"]|z atrybutem o nazwie `attr`, w którego wartości występuje ciąg znaków `value`
-... i]|- wielkość liter w wartości atrybutu nie ma znaczenia (w zakresie ASCII)
+... i]|wielkość liter w wartości atrybutu nie ma znaczenia (w zakresie ASCII)
 `,`|wybrane przez selektory, oddzielone `,` - działa tylko, kiedy wszystkie selektory są prawidłowe
 spacja|[przodek]spacja[`dopasowywany`]
 \>|[rodzic]>[`dopasowywane bezpośrednie dziecko`]
@@ -29,12 +29,17 @@ spacja|[przodek]spacja[`dopasowywany`]
 :nth-last-of-type()|to samo co :nth-of-type(), jedyna różnica: numeracja pozycji od tyłu
 ::before|tworzy niezaznaczalne i nieobecne w DOM dziecko danego elementu PRZED nim, które objęte jest formatowaniem tego elementu. Składnia - poniżej
 ::after|identyczny do ::before, jedyna różnica: dodaje specyficzne dziecko PO elemencie
+# Składnia ::before/::after
+###### Na przykładzie ::after - dla ::before identycznie
+[`selektor elementu`]::after{
+content:"`zawartość tekstowa`";
+white-space:pre-wrap; `konieczna właściwość która daje wolność w kwestii` TO DO
+color:`kolor tekstu`}
 
-# Składnia wybranych selektorów
-
+# Przykłady użycia wybranych selektorów
 Selektor|Dopasowuje
 ---|---
-a[href*="wArTOsc" i]
+a[href*="tekst" i]|`a`, który w wartości atrybutu `href` ma ciąg liter `tekst` zapisany DOWOLNĄ wielkością
 body :not(div):not(span)|wszystko w `body` oprócz `div` i `span`
 body :not(table) a|linki m.in. w tabeli, bo `td` pasuje do `:not(table)`
 :nth-child(7)|każde 7. dziecko
@@ -46,20 +51,6 @@ p:nth-of-type(2n+1)|nieparzyste paragrafy
 p:nth-of-type(2n)|parzyste paragrafy
 p:nth-of-type(1)|1. paragraf
 p:nth-of-type(4n)|co 4. paragraf
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 LVHA - Reguła LVHA: `:link`, `:visited`, `:hover`, `:active` – kolejność umieszczania w kodzie CSS pseudoklas związanych z łączem, w kolejności: od lewej
 
