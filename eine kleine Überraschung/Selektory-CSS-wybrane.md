@@ -37,3 +37,5 @@ spacja|[przodek]spacja[`dopasowywany`]
 LVHA - Reguła LVHA: `:link`, `:visited`, `:hover`, `:active` – kolejność umieszczania w kodzie CSS pseudoklas związanych z łączem, w kolejności: od lewej
 
 *- data aktualizacji informacji w danym wierszu: miesiąc (zapisany liczbą rzymską) i cyfra jedności roku
+
+[źródło](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors)
