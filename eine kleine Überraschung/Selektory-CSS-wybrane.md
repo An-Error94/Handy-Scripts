@@ -31,10 +31,14 @@ spacja|[przodek]spacja[`dopasowywany`]
 ::after|identyczny do ::before, jedyna różnica: dodaje specyficzne dziecko PO elemencie
 # Składnia ::before/::after
 ###### Na przykładzie ::after - dla ::before identycznie
-[`selektor elementu`]::after{
+[`selektor elementu`]::after
+{
 content:"`zawartość tekstowa`";
+
 white-space:pre-wrap; `konieczna właściwość która daje wolność w kwestii` TO DO
-color:`kolor tekstu`}
+
+color:`kolor tekstu`
+}
 
 # Przykłady użycia wybranych selektorów
 Selektor|Dopasowuje
