@@ -27,18 +27,41 @@ spacja|[przodek]spacja[`dopasowywany`]
 :nth-last-child()|to samo co :nth-child(), jedyna różnica: numeracja pozycji od tyłu
 :nth-of-type()|spośród węzłów **tego samego typu o wspólnym rodzicu** (**LEPSZY**) o pozycji określonej liczbą w nawiasie - składnia identyczna jak w `:nth-child()`
 :nth-last-of-type()|to samo co :nth-of-type(), jedyna różnica: numeracja pozycji od tyłu
-::before|tworzy niezaznaczalne i nieobecne w DOM dziecko danego elementu PRZED nim, które objęte jest formatowaniem tego elementu. Składnia - poniżej
+::before|tworzy niezaznaczalne i nieobecne w DOM dziecko danego elementu PRZED nim, które objęte jest formatowaniem tego elementu, włącznie z kwestią widoczności. Składnia - poniżej
 ::after|identyczny do ::before, jedyna różnica: dodaje specyficzne dziecko PO elemencie
 # Składnia ::before/::after
 ###### Na przykładzie ::after - dla ::before identycznie
 [`selektor elementu`]::after
 {
-content:"`zawartość tekstowa`";
+white-space:pre-wrap; `dopiero ustawienie tej właściwości na tę wartość daje wolność w kwestii przełamywania linii oraz odstępów`
 
-white-space:pre-wrap; `dopiero ustawienie właściwości na tę wartość daje wolność w kwestii` TO DO
+content:"`zawartość tekstowa`";
 
 color:`kolor tekstu`
 }
+
+## Zawartość
+dopuszczalne typy (do użycia także jednocześnie):
+### string
+- podawany w pojedynczym albo podwójnym cudzysłowie (jeden typ nie może zawierać się w fragmencie ograniczonym drugim typem, chyba że poprzedzony znakiem `\`)
+- oznaczenie nowej linii: `\a`
+- ww. ustawienie właściwościwości `white-space` zapewnia (oprócz `\a`) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # Przykłady użycia wybranych selektorów
 Selektor|Dopasowuje
