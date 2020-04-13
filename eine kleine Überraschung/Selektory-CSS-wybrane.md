@@ -35,7 +35,7 @@ spacja|[przodek]spacja[`dopasowywany`]
 {
 content:"`zawartość tekstowa`";
 
-white-space:pre-wrap; `konieczna właściwość która daje wolność w kwestii` TO DO
+white-space:pre-wrap; `dopiero ustawienie właściwości na tę wartość daje wolność w kwestii` TO DO
 
 color:`kolor tekstu`
 }
