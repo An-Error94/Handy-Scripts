@@ -15,9 +15,15 @@ spacja|[przodek]spacja[`dopasowywany`]
 +|[rodzeństwo BEZPOŚREDNIO przed w kodzie strony]+[`dopasowywany`]
 :active|LVHA: aktywowany przez użytkownika element
 :checked|włączone: `radio`, `checkbox` lub `option`; `option` – w pewnych przeglądarkach ograniczone możliwości ostylowania
-:focus|kliknięty lub wybrany przy pomocy klawisza "Tab" na klawiaturze
+:focus|kliknięty lub wybrany przy pomocy klawisza `Tab` na klawiaturze
 :focus-within|element, który ma `:focus` lub który zawiera element, który ma `:focus`
 :hover|nad którym jest kursor myszy; jeśli urządzenie dotykowe: bardzo różna obsługa
+:not()|który nie pasuje do selektora podanego w nawiasie; nie używać pseudoelementów; nie wolno zagnieżdżać tej pseudoklasy: `:not(:not(...))` lista argumentów w nawiasie nie jest szeroko zaimplementowana!|`body :not(div):not(span)`,`body :not(table) a
+`
+:link|LVHA:każdy nieodwiedzony `a`, `area` lub `link`, który ma atrybut `href`
+:visited|każdy odwiedzony link; ograniczone właściwości z uwagi na prywatność
+:target|jeśli jest on celem aktualnie użytego łącza wewnętrznego
+:nth-child()|o pozycji wśród węzłów o wspólnym rodzicu, określonej liczbą w nawiasie (numeracja od 1) która może być postaci: `An+B`, gdzie `A`,`B` to dziesiętne liczby całkowite; można pominąć albo część `An+` albo `+B` – pominięte części są uznawane za `0`; `A` może być równe `-1`, wtedy `1` można pominąć; `B` może być ujemne, wtedy należy zastąpić znak `+` znakiem `-`; `n` automatycznie przybiera wartości od `0` w górę
 
 
 
