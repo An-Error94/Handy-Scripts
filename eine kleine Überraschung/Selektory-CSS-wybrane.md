@@ -10,7 +10,9 @@ Selektor|Dopasowuje element|Przykład|Objaśnienie|*
 ... i]|- wielkość liter w wartości atrybutu nie ma znaczenia (w zakresie ASCII)|a[href*="wArTOsc" i]
 `,`|wybrane przez selektory, oddzielone `,` - działa tylko, kiedy wszystkie selektory są prawidłowe
 spacja|[przodek]spacja[`dopasowywany`]
-\>|[bezpośredni rodzic]>[`dopasowywane dziecko`]
+\>|[rodzic]>[`dopasowywane bezpośrednie dziecko`]
+~|[rodzeństwo wyżej w kodzie strony]~[`dopasowywany`]
++|[rodzeństwo BEZPOŚREDNIO przed w kodzie strony]+[`dopasowywany`]
 
 
 
