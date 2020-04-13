@@ -19,7 +19,7 @@ spacja|[przodek]spacja[`dopasowywany`]
 :focus|kliknięty lub wybrany przy pomocy klawisza `Tab` na klawiaturze
 :focus-within|element, który ma `:focus` lub który zawiera element, który ma `:focus`
 :hover|nad którym jest kursor myszy; jeśli urządzenie dotykowe: bardzo różna obsługa
-:not()|który nie pasuje do selektora podanego w nawiasie; nie używać pseudoelementów; nie wolno zagnieżdżać tej pseudoklasy: `:not(:not(...))` lista argumentów w nawiasie nie jest szeroko zaimplementowana!
+:not()|który nie pasuje do selektora podanego w nawiasie; nie używać pseudoelementów; nie wolno zagnieżdżać tej pseudoklasy: `:not(:not(...))`; lista argumentów w nawiasie nie jest szeroko zaimplementowana!
 :link|LVHA:każdy nieodwiedzony `a`, `area` lub `link`, który ma atrybut `href`
 :visited|każdy odwiedzony link; ograniczone właściwości z uwagi na prywatność
 :target|jeśli jest on celem aktualnie użytego łącza wewnętrznego
