@@ -4,7 +4,7 @@ Selektor|Dopasowuje element
 [attr]|z atrybutem o nazwie `attr`
 [attr="value"]|z atrybutem o nazwie `attr`, którego wartością jest dokładnie `value`
 [attr~="value"]|z atrybutem o nazwie `attr`, którego wartością są słowa oddzielone od siebie białymi znakami, gdzie jedno to właśnie `value`
-[attr\|="value"]|z atrybutem o nazwie `attr`, którego wartość to dokładnie `value` albo zaczyna się od `value`, po którym bezpośrednio jest łącznik/minus (-) (U+002D)
+[attr\|="value"]|z atrybutem o nazwie `attr`, którego wartość to dokładnie `value` albo zaczyna się od `value`, po którym bezpośrednio jest łącznik/minus (`-`) (U+002D)
 [attr^="value"]|z atrybutem o nazwie `attr`, którego wartość zaczyna się od `value`
 [attr$="value"]|z atrybutem o nazwie `attr`, którego wartość kończy się na `value`
 [attr*="value"]|z atrybutem o nazwie `attr`, w którego wartości występuje ciąg znaków `value`
@@ -24,13 +24,13 @@ spacja|[przodek]spacja[`dopasowywany`]
 :visited|każdy odwiedzony link; ograniczone właściwości z uwagi na prywatność
 :target|jeśli jest on celem aktualnie użytego łącza wewnętrznego
 :nth-child()|spośród węzłów o **wspólnym rodzicu**, o pozycji określonej liczbą w nawiasie (numeracja od `1`) która może być postaci: `An+B`, gdzie `A`,`B` to dziesiętne liczby całkowite; można pominąć część `An+` lub `+B` – pominięte części są uznawane za `0`; `A` może być równe `-1`, wtedy `1` można pominąć; `B` może być ujemne, wtedy trzeba zastąpić znak `+` znakiem `-`; `n` automatycznie przybiera wartości od `0` w górę
-:nth-last-child()|to samo co :nth-child(), jedyna różnica: numeracja pozycji od tyłu
+:nth-last-child()|to samo co `:nth-child()`, jedyna różnica: numeracja pozycji od tyłu
 :nth-of-type()|spośród węzłów **tego samego typu o wspólnym rodzicu** (**LEPSZY OD `:nth-child()`**) o pozycji określonej liczbą w nawiasie - składnia identyczna jak w `:nth-child()`
-:nth-last-of-type()|to samo co :nth-of-type(), jedyna różnica: numeracja pozycji od tyłu
+:nth-last-of-type()|to samo co `:nth-of-type()`, jedyna różnica: numeracja pozycji od tyłu
 ::before|tworzy niezaznaczalne i nieobecne w DOM dziecko danego elementu PRZED nim, które objęte jest formatowaniem tego elementu, włącznie z kwestią widoczności. Składnia - poniżej
-::after|identyczny do ::before, jedyna różnica: dodaje specyficzne dziecko PO elemencie
-# Składnia ::before/::after
-###### Na przykładzie ::after - dla ::before identycznie
+::after|identyczny do `::before`, jedyna różnica: dodaje specyficzne dziecko PO elemencie
+# Składnia `::before/::after`
+###### Na przykładzie `::after` - dla `::before` identycznie
 [`selektor elementu`]::after
 {
 white-space:pre-wrap; `dopiero ustawienie tej właściwości na tę wartość daje wolność w kwestii przełamywania linii oraz odstępów`
@@ -80,7 +80,5 @@ p:nth-of-type(1)|1. paragraf
 p:nth-of-type(4n)|co 4. paragraf
 
 LVHA - Reguła LVHA: `:link`, `:visited`, `:hover`, `:active` – kolejność umieszczania w kodzie CSS pseudoklas związanych z łączem, w kolejności: od lewej
-
-*- data aktualizacji informacji w danym wierszu: miesiąc (zapisany liczbą rzymską) i cyfra jedności roku
 
 [źródło](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors)
