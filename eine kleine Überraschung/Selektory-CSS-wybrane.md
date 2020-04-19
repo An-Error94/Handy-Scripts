@@ -25,7 +25,7 @@ spacja|[przodek]spacja[`dopasowywany`]
 :target|jeśli jest on celem aktualnie użytego łącza wewnętrznego
 :nth-child()|spośród węzłów o **wspólnym rodzicu**, o pozycji określonej liczbą w nawiasie (numeracja od `1`) która może być postaci: `An+B`, gdzie `A`,`B` to dziesiętne liczby całkowite; można pominąć część `An+` lub `+B` – pominięte części są uznawane za `0`; `A` może być równe `-1`, wtedy `1` można pominąć; `B` może być ujemne, wtedy trzeba zastąpić znak `+` znakiem `-`; `n` automatycznie przybiera wartości od `0` w górę
 :nth-last-child()|to samo co :nth-child(), jedyna różnica: numeracja pozycji od tyłu
-:nth-of-type()|spośród węzłów **tego samego typu o wspólnym rodzicu** (**LEPSZY**) o pozycji określonej liczbą w nawiasie - składnia identyczna jak w `:nth-child()`
+:nth-of-type()|spośród węzłów **tego samego typu o wspólnym rodzicu** (**LEPSZY OD `:nth-child()`**) o pozycji określonej liczbą w nawiasie - składnia identyczna jak w `:nth-child()`
 :nth-last-of-type()|to samo co :nth-of-type(), jedyna różnica: numeracja pozycji od tyłu
 ::before|tworzy niezaznaczalne i nieobecne w DOM dziecko danego elementu PRZED nim, które objęte jest formatowaniem tego elementu, włącznie z kwestią widoczności. Składnia - poniżej
 ::after|identyczny do ::before, jedyna różnica: dodaje specyficzne dziecko PO elemencie
