@@ -73,7 +73,7 @@ body :not(table) a|linki m.in. w tabeli, bo `td` pasuje do `:not(table)`
 :nth-child(5n)|każde co 5. dziecko
 :nth-child(3n+4)|każde 4., 7., 10. ... dziecko
 :nth-child(-n+3)|każde pierwsze 3 dzieci
-a:nth-child(n+8):nth-child(-n+15)|każde od 8. do 15. wł. dziecko, które musi być `a`
+a:nth-child(n+8):nth-child(-n+15)|każde od 8. do 15. włącznie dziecko, które musi być `a`
 p:nth-of-type(2n+1)|nieparzyste paragrafy
 p:nth-of-type(2n)|parzyste paragrafy
 p:nth-of-type(1)|1. paragraf
