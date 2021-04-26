@@ -21,7 +21,10 @@ Now you can use the right selector of any level of complexity, referring to a pa
 
 ## One additionally word from author: Specificity
 
-To make sure (brutally...) that the rule will be executed - taking into account the [Specificity](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance#To_summarize) - you may add ` !important` after your rule. Warning! There must be a space before the exclamation mark, eg. `a:visited` replace by `a:visited !important;`, `display:none;` replace by `display:none !important;`.
+To make sure that the rule will be executed - taking into account the [Specificity](https://web.archive.org/web/20210417202711/https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance#to_summarize) - you must add ` !important` after your rule.
+
+### Attention!!!
+There must be a space before the exclamation mark, eg. `color: red;` replace by `color:red !important;`, `display:none;` replace by `display:none !important;`.
 
 ## Replacing the `url()` function
 
@@ -49,7 +52,7 @@ The following selector disables the display of all links (anchors) only on the p
 
 ```
 html[data-a-url="https://example.com/An-Error94/Handy-Scripts"] a {
-  display:none;
+  display:none !important;
 }
 ```
 
@@ -89,7 +92,7 @@ The following selector disables the display of all links (anchors) on all pages 
 
 ```
 html[data-a-url^="https://example.com/An-Er"] a {
-  display:none;
+  display:none !important;
 }
 ```
 
@@ -104,7 +107,7 @@ These words are grouped into elements called "labels". Each label is separated b
 
 For example:
 
-* `com` matches all top-level `com` domains and all subdomains thereof.
+* `com` matches all pages in the top-level `com` domain and all subdomains thereof.
 * `com-example` matches all pages in the `example.com` domain and all its subdomains.
 * `com-example-abc` matches all pages in the domain `abc.example.com` and all its subdomains.
 * `com-example-strange^part` matches all pages in the domain `strange-part.example.com` and all its subdomains.
@@ -130,6 +133,6 @@ The following selector disables the display of all links (anchors) on all pages 
 
 ```
 html[data-a-domain|="com-example"] a{
-  display:none
+  display:none !important;
 }
 ```
